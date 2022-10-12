@@ -25,4 +25,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a otra accion
         run: |
-          curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/muxinc/playback-testing/dispatches --data '{"event_type": "build_application"}'
+          curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/muxinc/playback-testing/dispatches --data '{"event_type": "build_application"}'
